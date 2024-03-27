@@ -8,7 +8,7 @@ import Navbar from "./components/navbar/Navbar.js";
 import Album from "./components/album/Album.js";
 import Post from "./components/post/Post.js";
 import Footer from "./components/footer/Footer.js";
-
+import Employees from "./components/employees/Employees.js"
 function App() {
   const PATH = process.env.REACT_APP_PATH;
   const { flag, setFlag, user } = useContext(AppContext);
@@ -32,6 +32,7 @@ function App() {
                 <Route index path={`${PATH}/`} element={<Home />} />
                 <Route path={`${PATH}/post`} element={<Post />} />
                 <Route path={`${PATH}/album`} element={<Album />} />
+                <Route path={`${PATH}/employees`} element={<Employees />} />
               </Routes>
             </div>
           </div>
